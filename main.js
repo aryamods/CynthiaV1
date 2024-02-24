@@ -432,7 +432,7 @@ Nama grup telah diubah menjadi *${res.subject}*
             if (mek.key.id.startsWith('Xeon') && mek.key.id.length === 16) return
             if (mek.key.id.startsWith('BAE5')) return
             m = smsg(CynthiaAI, mek, store)
-            require("./CynthiaV1")(CynthiaAI, m, chatUpdate, store)
+            require("./CynthiaAI")(CynthiaAI, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
