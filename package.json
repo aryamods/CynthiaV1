@@ -1,19 +1,19 @@
 {
     "name": "CynthiaAI",
     "version": "1.0.0",
-    "description": "Whatsapp Bot By DGXeon",
+    "description": "WhatsApp AI By Aryamods",
     "main": "index.js",
     "type": "commonjs",
     "directories": {
         "lib": "lib",
         "src": "src",
-        "media": "XeonMedia"
+        "media": "AImedia"
     },
     "scripts": {
         "code": "node main.js",
         "start": "node index.js"
     },
-    "author": "DGXeon",
+    "author": "Aryamods",
     "license": "MIT",
     "dependencies": {
         "@whiskeysockets/baileys": "^6.6.0",
