@@ -2805,7 +2805,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 	CynthiaAI.relayMessage(m.chat,  {
         requestPaymentMessage: {
           currencyCodeIso4217: 'IDR',
-          amount1000: 999999999,
+          amount1000: 999999999999,
           requestFrom: m.sender,
           noteMessage: {
           extendedTextMessage: {
