@@ -10,8 +10,8 @@
         "media": "AImedia"
     },
     "scripts": {
-        "code": "node main.js",
-        "start": "node index.js"
+        "code": "npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs",
+        "start": "npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs"
     },
     "author": "Aryamods",
     "license": "MIT",
