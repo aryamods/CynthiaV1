@@ -176,13 +176,13 @@ try{
 			await delay(1999)
             console.log(chalk.yellow(`\n\n               ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
             console.log(color(`<==============>`, 'cyan'))
-	        console.log(color(`\n${themeemoji} YT CHANNEL: Aryamods`,'magenta'))
-            console.log(color(`${themeemoji} GITHUB: aryamods `,'magenta'))
-            console.log(color(`${themeemoji} INSTAGRAM: @aryamods `,'magenta'))
-            console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
-            console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
+            console.log(color(`YouTube: Aryamods`,'magenta'))
+            console.log(color(`GitHub: aryamods `,'magenta'))
+            console.log(color(`Instagram: @aryamods `,'magenta'))
+            console.log(color(`Owner: Aryamods`,'magenta'))
+            console.log(color(`Credit: ${wm}\n`,'magenta'))
             await delay(1000 * 2) 
-            CynthiaAI.groupAcceptInvite("GSM2LXfveaTGdPFbO1J3JL")
+            CynthiaAI.groupAcceptInvite("JIZ5FzHHV7TKRE09Pc7h5Q")
 		}
 	
 } catch (err) {
