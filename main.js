@@ -175,10 +175,10 @@ try{
             console.log(color(`🌿Connected to => ` + JSON.stringify(CynthiaAI.user, null, 2), 'yellow'))
 			await delay(1999)
             console.log(chalk.yellow(`\n\n               ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
-            console.log(color(`< ================================================== >`, 'cyan'))
-	        console.log(color(`\n${themeemoji} YT CHANNEL: Xeon`,'magenta'))
-            console.log(color(`${themeemoji} GITHUB: DGXeon `,'magenta'))
-            console.log(color(`${themeemoji} INSTAGRAM: @unicorn_xeon `,'magenta'))
+            console.log(color(`<==============>`, 'cyan'))
+	        console.log(color(`\n${themeemoji} YT CHANNEL: Aryamods`,'magenta'))
+            console.log(color(`${themeemoji} GITHUB: aryamods `,'magenta'))
+            console.log(color(`${themeemoji} INSTAGRAM: @aryamods `,'magenta'))
             console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
             console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
             await delay(1000 * 2) 
@@ -237,7 +237,7 @@ CynthiaAI.sendMessage(anu.id,
  "externalAdReply": {"showAdAttribution": true,
  "containsAutoReply": true,
  "title": `${global.botname}`,
-"body": `${ownername}`,
+"body": `Kreatifitas Tanpa Batas`,
  "previewType": "PHOTO",
 "thumbnailUrl": ``,
 "thumbnail": XeonWlcm,
@@ -263,7 +263,7 @@ CynthiaAI.sendMessage(anu.id,
  "externalAdReply": {"showAdAttribution": true,
  "containsAutoReply": true,
  "title": `${global.botname}`,
-"body": `${ownername}`,
+"body": `Kreatifitas Tanpa Batas`,
  "previewType": "PHOTO",
 "thumbnailUrl": ``,
 "thumbnail": XeonLft,
