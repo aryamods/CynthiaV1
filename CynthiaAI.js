@@ -3707,8 +3707,7 @@ let teks = '\n┌─「 *DAFTAR VIDEO* 」\n'
 for (let x of VideoXeon) {
 teks += `│ ${x}\n`
 }
-teks += `└────────────────────\n\nTotal : ${VideoXeon.length}
-`
+teks += `└────────────────────\n\nTotal : ${VideoXeon.length}\n`
 replygcxeon(teks)
 }
 break
@@ -3740,8 +3739,7 @@ let teks = '\n┌─「 *DAFTAR GAMBAR* 」\n'
 for (let x of ImageXeon) {
 teks += `│ ${x}\n`
 }
-teks += `└────────────────────\n\nTotal : ${ImageXeon.length}
-`
+teks += `└────────────────────\n\nTotal : ${ImageXeon.length}\n`
 replygcxeon(teks)
 }
 break
@@ -3773,8 +3771,7 @@ let teks = '\n┌─「 *DAFTAR STICKER* 」\n'
 for (let x of StickerXeon) {
 teks += `│ ${x}\n`
 }
-teks += `└────────────────────\n\nTotal : ${StickerXeon.length}
-`
+teks += `└────────────────────\n\nTotal : ${StickerXeon.length}\n`
 replygcxeon(teks)
 }
 break
@@ -3802,7 +3799,7 @@ View list of Messages With ${prefix}listmsg`)
             case 'listmsg': {
                 let msgs = JSON.parse(fs.readFileSync('./src/database.json'))
 	        let seplit = Object.entries(global.db.data.database).map(([nama, isi]) => { return { nama, ...isi } })
-		let teks = ' DATABASE LIST \n\n'
+		let teks = '\nDATABASE LIST\n'
 		for (let i of seplit) {
 		    teks += `${themeemoji} *Name :* ${i.nama}\n${themeemoji} *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
 	        }
@@ -3845,8 +3842,7 @@ let teks = '\n┌─「 *DAFTAR VOICE NOTE* 」\n'
 for (let x of VoiceNoteXeon) {
 teks += `│ ${x}\n`
 }
-teks += `└────────────────────\n\nTotal : ${VoiceNoteXeon.length}
-`
+teks += `└────────────────────\n\nTotal : ${VoiceNoteXeon.length}\n`
 replygcxeon(teks)
 }
 break
@@ -3887,8 +3883,7 @@ let teksooooo = '\n┌─「 *DAFTAR ZIP* 」\n'
 for (let x of ZipXeon) {
 teksooooo += `│ ${x}\n`
 }
-teksooooo += `└────────────────────\n\nTotal : ${ZipXeon.length}
-`
+teksooooo += `└────────────────────\n\nTotal : ${ZipXeon.length}\n`
 replygcxeon(teksooooo)
 }
 break
@@ -3929,8 +3924,7 @@ let teksoooooo = '\n┌─「 *DAFTAR APLIKASI* 」\n'
 for (let x of ApkXeon) {
 teksoooooo += `│ ${x}\n`
 }
-teksoooooo += `└────────────────────\n\nTotal : ${ApkXeon.length}
-`
+teksoooooo += `└────────────────────\n\nTotal : ${ApkXeon.length}\n`
 replygcxeon(teksoooooo)
 }
 break
@@ -3971,8 +3965,7 @@ let teksoooo = '\n┌─「 *DAFTAR PDF* 」\n'
 for (let x of DocXeon) {
 teksoooo += `│ ${x}\n`
 }
-teksoooo += `└────────────────────\n\nTotal : ${DocXeon.length}*
-`
+teksoooo += `└────────────────────\n\nTotal : ${DocXeon.length}\n`
 replygcxeon(teksoooo)
 }
 break
@@ -4972,7 +4965,7 @@ CynthiaAI.sendMessage(m.chat,
 ┌─「 *JODOH* 」
 │ @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
 └────────────────────
-',
+`,
 contextInfo:{
 mentionedJid:[me, jodoh],
 forwardingScore: 9999999,
@@ -4980,11 +4973,11 @@ isForwarded: true,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-"title": `${global.botname}`,
+"title": ` ${global.botname}`,
 "body": `${wm}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": fs.readFileSync('./AImedia/theme/cheemspicAr.jpg'),
+"thumbnail": fs.readFileSync(`./AImedia/theme/cheemspicAr.jpeg`),
 "sourceUrl": `${wagc}`}}},
 { quoted: m})        
             }
@@ -5007,11 +5000,11 @@ isForwarded: true,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-"title": `${global.botname}`,
+"title": ` ${global.botname}`,
 "body": `${wm}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": fs.readFileSync('./AImedia/theme/cheemspicAr.jpg'),
+"thumbnail": fs.readFileSync(`./AImedia/theme/cheemspicAr.jpg`),
 "sourceUrl": `${wagc}`}}},
 { quoted: m})        
             }
