@@ -3837,11 +3837,12 @@ replygcxeon(`Success deleting vn ${q}`)
 }
 break
 case 'listvn':{
-let teks = '┌──⭓「 *VN List* 」\n│ \n'
+let teks = '
+┌─「 *DAFTAR VOICE NOTE* 」\n`
 for (let x of VoiceNoteXeon) {
-teks += `│ ⭔ ${x}\n`
+teks += `│ ${x}\n`
 }
-teks += `│ \n└────────────⭓\n\n*Totally there are : ${VoiceNoteXeon.length}*`
+teks += `└────────────────────\n\nTotal : ${VoiceNoteXeon.length}`
 replygcxeon(teks)
 }
 break
@@ -3878,11 +3879,12 @@ replygcxeon(`Successfully deleted zip ${teks}`)
 break
 case 'listzip': {
 
-let teksooooo = '┌──⭓「 *ZIP LIST* 」\n│ \n'
+let teksooooo = '
+┌─「 *DAFTAR ZIP* 」\n`'
 for (let x of ZipXeon) {
-teksooooo += `│ ⭔ ${x}\n`
+teksooooo += `│ ${x}\n`
 }
-teksooooo += `│ \n└────────────⭓\n\n*Total : ${ZipXeon.length}*`
+teksooooo += `└────────────────────\n\nTotal : ${ZipXeon.length}`
 replygcxeon(teksooooo)
 }
 break
@@ -3924,7 +3926,7 @@ let teksoooooo = '
 for (let x of ApkXeon) {
 teksoooooo += `│ ${x}\n`
 }
-teksoooooo += `└────────────────────\n\n*Total : ${ApkXeon.length}`
+teksoooooo += `└────────────────────\n\nTotal : ${ApkXeon.length}`
 replygcxeon(teksoooooo)
 }
 break
