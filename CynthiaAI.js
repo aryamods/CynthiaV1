@@ -3702,11 +3702,12 @@ replygcxeon(`Success deleting video ${q}`)
 }
 break
 case 'listvideo':{
-let teks = '┌──⭓「 *Video List* 」\n│ \n'
+let teks = '┌─「 *DAFTAR VIDEO* 」\n'
 for (let x of VideoXeon) {
-teks += `│ ⭔ ${x}\n`
+teks += `│ ${x}\n`
 }
-teks += `│ \n└────────────⭓\n\n*Totally there are : ${VideoXeon.length}*`
+teks += `└────────────────────\n\nTotal : ${VideoXeon.length}
+`
 replygcxeon(teks)
 }
 break
@@ -3734,11 +3735,13 @@ replygcxeon(`Success deleting image ${q}`)
 }
 break
 case 'listimage':{
-let teks = '┌──⭓「 *Image List* 」\n│ \n'
+let teks = '
+┌─「 *DAFTAR GAMBAR* 」\n'
 for (let x of ImageXeon) {
-teks += `│ ⭔ ${x}\n`
+teks += `│ ${x}\n`
 }
-teks += `│ \n└────────────⭓\n\n*Totally there are : ${ImageXeon.length}*`
+teks += `└────────────────────\n\nTotal : ${ImageXeon.length}
+`
 replygcxeon(teks)
 }
 break
@@ -3766,11 +3769,13 @@ replygcxeon(`Success deleting sticker ${q}`)
 }
 break
 case 'liststicker':{
-let teks = '┌──⭓「 *Sticker List* 」\n│ \n'
+let teks = '
+┌─「 *DAFTAR STICKER* 」\n'
 for (let x of StickerXeon) {
-teks += `│ ⭔ ${x}\n`
+teks += `│ ${x}\n`
 }
-teks += `│ \n└────────────⭓\n\n*Totally there are : ${StickerXeon.length}*`
+teks += `└────────────────────\n\nTotal : ${StickerXeon.length}
+`
 replygcxeon(teks)
 }
 break
@@ -3838,11 +3843,12 @@ replygcxeon(`Success deleting vn ${q}`)
 break
 case 'listvn':{
 let teks = '
-┌─「 *DAFTAR VOICE NOTE* 」\n`
+┌─「 *DAFTAR VOICE NOTE* 」\n'
 for (let x of VoiceNoteXeon) {
 teks += `│ ${x}\n`
 }
-teks += `└────────────────────\n\nTotal : ${VoiceNoteXeon.length}`
+teks += `└────────────────────\n\nTotal : ${VoiceNoteXeon.length}
+`
 replygcxeon(teks)
 }
 break
@@ -3880,11 +3886,12 @@ break
 case 'listzip': {
 
 let teksooooo = '
-┌─「 *DAFTAR ZIP* 」\n`'
+┌─「 *DAFTAR ZIP* 」\n'
 for (let x of ZipXeon) {
 teksooooo += `│ ${x}\n`
 }
-teksooooo += `└────────────────────\n\nTotal : ${ZipXeon.length}`
+teksooooo += `└────────────────────\n\nTotal : ${ZipXeon.length}
+`
 replygcxeon(teksooooo)
 }
 break
@@ -3922,11 +3929,12 @@ break
 case 'listapk': {
 
 let teksoooooo = '
-┌─「 *DAFTAR APLIKASI* 」\n`
+┌─「 *DAFTAR APLIKASI* 」\n'
 for (let x of ApkXeon) {
 teksoooooo += `│ ${x}\n`
 }
-teksoooooo += `└────────────────────\n\nTotal : ${ApkXeon.length}`
+teksoooooo += `└────────────────────\n\nTotal : ${ApkXeon.length}
+`
 replygcxeon(teksoooooo)
 }
 break
@@ -3963,11 +3971,13 @@ replygcxeon(`Successfully deleted pdf ${teks}`)
 break
 case 'listpdf': {
 
-let teksoooo = '┌──⭓「 *PDF LIST* 」\n│ \n'
+let teksoooo = '
+┌─「 *DAFTAR PDF* 」\n'
 for (let x of DocXeon) {
-teksoooo += `│ ⭔ ${x}\n`
+teksoooo += `│ ${x}\n`
 }
-teksoooo += `│ \n└────────────⭓\n\n*Total : ${DocXeon.length}*`
+teksoooo += `└────────────────────\n\nTotal : ${DocXeon.length}*
+`
 replygcxeon(teksoooo)
 }
 break
