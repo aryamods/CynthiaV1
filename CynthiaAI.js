@@ -2958,27 +2958,7 @@ let teks = `
 │ Instagram :https://s.id/IGCFA
 └────────────────────
 `
-sendCynthiaAIMessage(from, { 
-text: teks,
-mentions:[sender],
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: true, 
-mentionedJid:[sender],
-"externalAdReply": {
-"showAdAttribution": true,
-"renderLargerThumbnail": true,
-"title": `${global.botname}`,
-"body": `${wm}`,
-"containsAutoReply": true,
-"mediaType": 1, 
-"thumbnail": fs.readFileSync("./AImedia/theme/cheemspicAr.jpg"),
-"mediaUrl": `${wagc}`,
-"sourceUrl": `${wagc}`
-}
-}
-})
-}
+replygcxeon(teks)
 break
             case 'owner': {
                 CynthiaAI.sendMessage(from, {
@@ -4884,7 +4864,7 @@ const reply = `
             break
             case 'kapankah': {
             	if (!text) return replygcxeon(`Tambahkan Pertanyaan seperti *${prefix + command}* ${pushname} Menikah`)
-            	let bisa = [`01 bulan lagi`, `02 bulan lagi`, `15 bulan lagi`, `16 bulan lagi`, `17 bulan lagi`, `18 bulan lagi`, `19 bulan lagi`, `20 bulan lagi`, `21 bulan lagi`, `22 bulan lagi`, `23 bulan lagi`, `24 bulan lagi`, `25 bulan lagi`, `26 bulan lagi`, `27 bulan lagi`, `28 bulan lagi`, `29 bulan lagi`, `30 bulan lagi`, `31 bulan lagi`, `32 bulan lagi`, `33 bulan lagi`, `34 bulan lagi`, `35 bulan lagi`, `36 bulan lagi`, `37 bulan lagi`, `38 bulan lagi`, `39 bulan lagi`, `40 bulan lagi`, `41 bulan lagi`, `42 bulan lagi`, `43 bulan lagi`, `44 bulan lagi`, `45 bulan lagi`, `46 bulan lagi`, `47 bulan lagi`, `48 bulan lagi`, `49 bulan lagi`, `50 bulan lagi`]
+            	let kapan = [`01 bulan lagi`, `02 bulan lagi`, `15 bulan lagi`, `16 bulan lagi`, `17 bulan lagi`, `18 bulan lagi`, `19 bulan lagi`, `20 bulan lagi`, `21 bulan lagi`, `22 bulan lagi`, `23 bulan lagi`, `24 bulan lagi`, `25 bulan lagi`, `26 bulan lagi`, `27 bulan lagi`, `28 bulan lagi`, `29 bulan lagi`, `30 bulan lagi`, `31 bulan lagi`, `32 bulan lagi`, `33 bulan lagi`, `34 bulan lagi`, `35 bulan lagi`, `36 bulan lagi`, `37 bulan lagi`, `38 bulan lagi`, `39 bulan lagi`, `40 bulan lagi`, `41 bulan lagi`, `42 bulan lagi`, `43 bulan lagi`, `44 bulan lagi`, `45 bulan lagi`, `46 bulan lagi`, `47 bulan lagi`, `48 bulan lagi`, `49 bulan lagi`, `50 bulan lagi`]
                 let koh = kapan[Math.floor(Math.random() * kapan.length)]
                 let jawab = `
 ┌─「 *KAPANKAH* 」
@@ -4892,7 +4872,7 @@ const reply = `
 │ Jawaban : ${koh}
 └────────────────────
 `
-            await replygcxeon(jawab)
+            await replygcxeon(koh)
             }
             break
 case 'what': {
@@ -4905,8 +4885,8 @@ case 'what': {
             break
 case 'dimana': {
 if (!text) return replygcxeon(`Tambahkan Pertanyaan seperti *${prefix + command}* Calon Pasangan ${pushname}`)
-            	let wherelol = [`Aceh`, `Sumatera Utara`, `Sumatera Barat`, `Riau`, `Kepulauan Riau`, `Jambi`, `Bengkulu`, `Sumatera Selatan`, `Bangka Belitung`, `Lampung`, `Banten`, `DKI Jakarta`, `Jawa Barat`, `Jawa Tengah`, `Daerah Istimewa Yogyakarta`, `Jawa Timur`, `Bali`, `Nusa Tenggara Barat`, `Nusa Tenggara Timur`, `Kalimantan Barat`, `Kalimantan Tengah`, `Kalimantan Selatan`, `Kalimantan Timur`, `Kalimantan Utara`, `Sulawesi Utara`, `Gorontalo`, `Sulawesi Tengah`, `Sulawesi Barat`, `Sulawesi Selatan`, `Sulawesi Tenggara`, `Maluku`, `Maluku Utara`, `Papua Barat`, `Papua`]
-                let kah = wherelol[Math.floor(Math.random() * wherelol.length)]
+            	let dimana = [`Aceh`, `Sumatera Utara`, `Sumatera Barat`, `Riau`, `Kepulauan Riau`, `Jambi`, `Bengkulu`, `Sumatera Selatan`, `Bangka Belitung`, `Lampung`, `Banten`, `DKI Jakarta`, `Jawa Barat`, `Jawa Tengah`, `Daerah Istimewa Yogyakarta`, `Jawa Timur`, `Bali`, `Nusa Tenggara Barat`, `Nusa Tenggara Timur`, `Kalimantan Barat`, `Kalimantan Tengah`, `Kalimantan Selatan`, `Kalimantan Timur`, `Kalimantan Utara`, `Sulawesi Utara`, `Gorontalo`, `Sulawesi Tengah`, `Sulawesi Barat`, `Sulawesi Selatan`, `Sulawesi Tenggara`, `Maluku`, `Maluku Utara`, `Papua Barat`, `Papua`]
+                let kah = dimana[Math.floor(Math.random() * dimana.length)]
                 let jawab = `
 ┌─「 *DIMANA* 」
 │ Pertanyaan : ${text}
@@ -5004,7 +4984,7 @@ isForwarded: true,
 "body": `${wm}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": fs.readFileSync(`./AImedia/theme/cheemspicAr.jpg`),
+"thumbnail": fs.readFileSync(`./AImedia/theme/cheemspicAr.jpeg`),
 "sourceUrl": `${wagc}`}}},
 { quoted: m})        
             }
