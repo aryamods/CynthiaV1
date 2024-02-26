@@ -227,7 +227,7 @@ XeonLft = await getBuffer(ppuser)
 │ Nama :  @${xeonName.split("@")[0]}
 │ Bergabung : ${metadata.subject}
 │ Anggota : ${xmembers}
-│ Waktu : ${xtime}, ${xdate}
+│ Aksi : ${xtime} WIB, ${xdate}
 └───────────────
 `
 CynthiaAI.sendMessage(anu.id,
@@ -253,7 +253,7 @@ CynthiaAI.sendMessage(anu.id,
 │ Nama :  @${xeonName.split("@")[0]}
 │ Berpisah : ${metadata.subject}
 │ Anggota : ${xeonmembers}
-│ Waktu : ${xeontime}, ${xeondate}
+│ Aksi : ${xeontime} WIB, ${xeondate}
 └───────────────
 `
 CynthiaAI.sendMessage(anu.id,
