@@ -3920,7 +3920,7 @@ break
 case 'listapk': {
 
 let teksoooooo = '
-┌─「 *DAFTAR APLIKASI* 」
+┌─「 *DAFTAR APLIKASI* 」\n`
 for (let x of ApkXeon) {
 teksoooooo += `│ ${x}\n`
 }
