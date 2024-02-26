@@ -3702,7 +3702,7 @@ replygcxeon(`Success deleting video ${q}`)
 }
 break
 case 'listvideo':{
-let teks = '┌─「 *DAFTAR VIDEO* 」\n'
+let teks = '\n┌─「 *DAFTAR VIDEO* 」\n'
 for (let x of VideoXeon) {
 teks += `│ ${x}\n`
 }
@@ -3735,8 +3735,7 @@ replygcxeon(`Success deleting image ${q}`)
 }
 break
 case 'listimage':{
-let teks = '
-┌─「 *DAFTAR GAMBAR* 」\n'
+let teks = '\n┌─「 *DAFTAR GAMBAR* 」\n'
 for (let x of ImageXeon) {
 teks += `│ ${x}\n`
 }
@@ -3769,8 +3768,7 @@ replygcxeon(`Success deleting sticker ${q}`)
 }
 break
 case 'liststicker':{
-let teks = '
-┌─「 *DAFTAR STICKER* 」\n'
+let teks = '\n┌─「 *DAFTAR STICKER* 」\n'
 for (let x of StickerXeon) {
 teks += `│ ${x}\n`
 }
@@ -3842,8 +3840,7 @@ replygcxeon(`Success deleting vn ${q}`)
 }
 break
 case 'listvn':{
-let teks = '
-┌─「 *DAFTAR VOICE NOTE* 」\n'
+let teks = '\n┌─「 *DAFTAR VOICE NOTE* 」\n'
 for (let x of VoiceNoteXeon) {
 teks += `│ ${x}\n`
 }
@@ -3885,8 +3882,7 @@ replygcxeon(`Successfully deleted zip ${teks}`)
 break
 case 'listzip': {
 
-let teksooooo = '
-┌─「 *DAFTAR ZIP* 」\n'
+let teksooooo = '\n┌─「 *DAFTAR ZIP* 」\n'
 for (let x of ZipXeon) {
 teksooooo += `│ ${x}\n`
 }
@@ -3928,8 +3924,7 @@ replygcxeon(`Successfully deleted Apk ${teks}`)
 break
 case 'listapk': {
 
-let teksoooooo = '
-┌─「 *DAFTAR APLIKASI* 」\n'
+let teksoooooo = '\n┌─「 *DAFTAR APLIKASI* 」\n'
 for (let x of ApkXeon) {
 teksoooooo += `│ ${x}\n`
 }
@@ -3971,8 +3966,7 @@ replygcxeon(`Successfully deleted pdf ${teks}`)
 break
 case 'listpdf': {
 
-let teksoooo = '
-┌─「 *DAFTAR PDF* 」\n'
+let teksoooo = '\n┌─「 *DAFTAR PDF* 」\n'
 for (let x of DocXeon) {
 teksoooo += `│ ${x}\n`
 }
