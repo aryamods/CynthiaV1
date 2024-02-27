@@ -50,7 +50,7 @@ global.mess = {
     success: 'Sukses'
 }
 //thumbnail
-global.thumb = fs.readFileSync('./AImedia/theme/cheemspic.jpg')
+global.thumb = fs.readFileSync('./AImedia/theme/CynthiaB.jpg')
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
