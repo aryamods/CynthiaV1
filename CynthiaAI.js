@@ -2958,7 +2958,7 @@ let teks = `
 │ Instagram :https://s.id/IGCFA
 └────────────────────
 `
-replygcxeon(teks)}
+return replygcxeon(teks)}
 			break
             case 'owner': {
                 CynthiaAI.sendMessage(from, {
