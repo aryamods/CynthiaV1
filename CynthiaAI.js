@@ -3381,6 +3381,8 @@ Type *surrender* to give up and admit defeat`
                 let poin = 10
                 let poin_lose = 10
                 let timeout = 60000
+		let member = participants.map(u => u.id)
+                let orang = member[Math.floor(Math.random() * member.length)]
                 if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) replygcxeon(`Anda sudah ditantang Olehnya`)
                 if (m.mentionedJid[0] === m.sender) return replygcxeon(`Tidak bisa bermain Sendiri`)
                 if (!m.mentionedJid[0]) return replygcxeon(`Ajak teman Anda bermain bersama dengan mengetikkan "${prefix}suit @${orang.split('@')[0]}" di kolom chat.`, m.chat, {
