@@ -2958,26 +2958,7 @@ let teks = `
 │ Instagram :https://s.id/IGCFA
 └────────────────────
 `
-sendCynthiaAIMessage(from, { 
-text: teks,
-mentions:[sender],
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: true, 
-mentionedJid:[sender],
-"externalAdReply": {
-"showAdAttribution": true,
-"renderLargerThumbnail": true,
-"title": botname, 
-"containsAutoReply": true,
-"mediaType": 1, 
-"thumbnail": fs.readFileSync("./AImedia/theme/cheemspic.jpg"),
-"mediaUrl": `${wagc}`,
-"sourceUrl": `${wagc}`
-}
-}
-})
-	}
+replygcxeon(teks)
 			break
             case 'owner': {
                 CynthiaAI.sendMessage(from, {
