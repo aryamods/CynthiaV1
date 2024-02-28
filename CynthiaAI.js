@@ -1081,8 +1081,8 @@ ketik Surrender untuk menyerah dan mengaku kalah`
 	    if (roof) {
 	    let win = ''
 	    let tie = false
-	    if (m.sender == roof.p2 && /^(acc(ept)?|accept|yes|terima?|reject|menolak|tolak|nanti|n|nop(e.)?yes|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
-	    if (/^(reject|menolak|tolak|nanti|n|nop(e.)?yes)/i.test(m.text)) {
+	    if (m.sender == roof.p2 && /^(acc(ept)?|accept|yes|terima?|reject|no|later|menolak(e.)?yes|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
+	    if (/^(reject|no|later|n|menolak(e.)?yes)/i.test(m.text)) {
 	    CynthiaAI.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} menolak bermain, Permainan dibatalkan`, m)
 	    delete this.suit[roof.id]
 	    return !0
