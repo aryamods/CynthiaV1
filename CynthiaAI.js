@@ -1133,7 +1133,7 @@ ketik Surrender untuk menyerah dan mengaku kalah`
 	    else if (k.test(stage) && b.test(stage2)) win = roof.p
 	    else if (k.test(stage) && g.test(stage2)) win = roof.p2
 	    else if (stage == stage2) tie = true
-	    CynthiaAI.sendText(roof.asal, `Permainan Berakhir ${tie ? 'Seri : ''}
+	    CynthiaAI.sendText(roof.asal, `Permainan Berakhir ${tie ? 'Seri' : ''}
 
 - @${roof.p.split`@`[0]} ( ${roof.text} ) ${tie ? '' : roof.p == win ? ` Menang \n` : ` Kalah \n`}
 - @${roof.p2.split`@`[0]} ( ${roof.text2} ) ${tie ? '' : roof.p2 == win ? ` Menang \n` : ` Kalah  \n`}
